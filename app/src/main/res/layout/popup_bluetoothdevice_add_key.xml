@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_20">
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/popup_bluetoothdevice_add_key_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_linearlayout"
+        android:text="@string/cancel"
+        android:textColor="#747474"
+        android:textSize="@dimen/dp_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/popup_bluetoothdevice_add_key_cancel"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/shape_linearlayout"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_25">
+
+        <TextView
+            android:id="@+id/popup_bluetoothdevice_add_key_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_19"
+            android:layout_marginTop="@dimen/dp_18"
+            android:text="@string/choose_ways_to_add_key"
+            android:textColor="#747474"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/popup_bluetoothdevice_add_key_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:paddingLeft="@dimen/dp_30">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/item_icon_fingerprint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="@string/fingerprint"
+                android:textColor="#747474"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_bluetoothdevice_add_key_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:paddingLeft="@dimen/dp_30">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/item_icon_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="@string/password"
+                android:textColor="#747474"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_bluetoothdevice_add_key_iccard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:paddingLeft="@dimen/dp_30">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/item_icon_iccard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:text="@string/proximity_card"
+                android:textColor="#747474"
+                android:textSize="@dimen/dp_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

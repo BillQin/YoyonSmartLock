@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top" />
+
+    <!--其他设置-->
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--是否开启指纹认证-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/settingActivity_fingerprintIcon"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/setting_modify_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/settingActivity_fingerprintIcon"
+                android:text="@string/open_gesture_password_validation"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/settingActivity_isVerifyPatternPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"/>
+        </RelativeLayout>
+        <View
+            android:background="@android:color/white"
+            android:layout_height="@dimen/dp_1"
+            android:layout_width="@dimen/dp_65"/>
+
+        <!--设置手势密码-->
+        <RelativeLayout
+            android:id="@+id/settingActivity_setPatternPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_55"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/settingActivity_setPatternPasswordIcon"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:src="@drawable/setting_modify_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/settingActivity_setPatternPasswordIcon"
+                android:text="@string/set_gesture_password"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/dp_16"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_13"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:src="@drawable/item_right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

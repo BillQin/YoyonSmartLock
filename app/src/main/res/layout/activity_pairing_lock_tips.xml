@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pairingLockTipsActivity_actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/pairingLockTipsActivity_cancelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_44"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_10">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/dp_18" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/prepare"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/dp_18"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/pairingLockTipsActivity_image"
+        android:layout_width="@dimen/dp_154"
+        android:layout_height="@dimen/dp_186"
+        android:layout_below="@id/pairingLockTipsActivity_actionBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_65"
+        android:src="@drawable/pairing_lock_tips" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/pairingLockTipsActivity_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pairingLockTipsActivity_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_60"
+        android:textSize="@dimen/dp_15"
+        android:text="@string/ble_device_prepare_tips"
+        android:textColor="#9B9B9B" />
+    <Button
+        android:id="@+id/pairingLockTipsActivity_nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:background="@drawable/blue_button_bg"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp_15"
+        android:textStyle="bold" />
+</RelativeLayout>

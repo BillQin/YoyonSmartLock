@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2E87CE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#2E87CE</color>
+    //bottomNavigationBar背景颜色
+    <color name="bottomNavigationBarBackground">#f5f5f5</color>
+    //bottomNavigationBar字体未被选择时颜色
+    <color name="bottomNavigationBarInActive">#BEBEBE</color>
+    //bottomNavigationBar字体被选择时颜色
+    <color name="bottomNavigationBarActive">#3AA7FF</color>
+
+    //设备状态颜色
+    <color name="deviceOnline">#4DC22F</color>
+    <color name="deviceOffline">#FA6160</color>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/popup_bluetoothdevice_add_rfic_enroll_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/blue_button_bg"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/popup_bluetoothdevice_add_rfic_enroll_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/popup_bluetoothdevice_add_rfic_enroll_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="正在识别感应卡..."
+        android:textColor="#4A4A4A"
+        android:textSize="17sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/popup_bluetoothdevice_add_rfic_enroll_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+</RelativeLayout>

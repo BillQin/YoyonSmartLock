@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top"
+        layout="@layout/top" />
+
+    <!--&lt;!&ndash;设备管理&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/mineFragment_device"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:layout_marginTop="@dimen/dp_15"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/dp_55">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/mineFragment_deviceIcon"-->
+            <!--android:layout_width="@dimen/dp_25"-->
+            <!--android:layout_height="@dimen/dp_25"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/dp_15"-->
+            <!--android:src="@drawable/mine_device" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/dp_15"-->
+            <!--android:layout_toRightOf="@id/mineFragment_deviceIcon"-->
+            <!--android:text="@string/device_management"-->
+            <!--android:textColor="#4A4A4A"-->
+            <!--android:textSize="@dimen/dp_16"-->
+            <!--android:textStyle="bold" />-->
+        <!--<ImageView-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/item_right_arrow"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_marginEnd="@dimen/dp_16"-->
+            <!--android:layout_width="@dimen/dp_8"-->
+            <!--android:layout_height="@dimen/dp_13"/>-->
+    <!--</RelativeLayout>-->
+    <!--<View-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:layout_height="@dimen/dp_1"-->
+        <!--android:layout_width="@dimen/dp_55"/>-->
+
+    <RelativeLayout
+        android:id="@+id/mineFragment_checkUpdate"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_height="@dimen/dp_55">
+
+        <ImageView
+            android:id="@+id/mineFragment_checkUpdateIcon"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:src="@drawable/item_icon_check_update" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/mineFragment_checkUpdateIcon"
+            android:text="@string/check_update"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/item_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_13"/>
+    </RelativeLayout>
+    <View
+        android:background="@android:color/white"
+        android:layout_height="@dimen/dp_1"
+        android:layout_width="@dimen/dp_55"/>
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55">
+
+        <ImageView
+            android:id="@+id/mineFragment_versionCodeIcon"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:src="@drawable/mine_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/mineFragment_versionCodeIcon"
+            android:text="@string/version_code"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/mineFragment_versionCode"
+            android:textStyle="bold"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@android:color/white"
+        android:layout_height="@dimen/dp_1"
+        android:layout_width="@dimen/dp_55"/>
+    <!--设置-->
+    <RelativeLayout
+        android:id="@+id/mineFragment_setting"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55">
+
+        <ImageView
+            android:id="@+id/mineFragment_settingIcon"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:src="@drawable/mine_setting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/mineFragment_settingIcon"
+            android:text="@string/setting"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:src="@drawable/item_right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_13"/>
+    </RelativeLayout>
+</LinearLayout>

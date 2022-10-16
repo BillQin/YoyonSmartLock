@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/bluetoothDeviceKeyList_icon"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/bluetoothDeviceKeyList_keyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_2"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_toRightOf="@id/bluetoothDeviceKeyList_icon"
+        android:textColor="#4A4A4A"
+        android:textSize="@dimen/dp_16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bluetoothDeviceKeyList_keyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothDeviceKeyList_keyName"
+        android:layout_toRightOf="@id/bluetoothDeviceKeyList_icon"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/dp_11" />
+
+    <TextView
+        android:id="@+id/bluetoothDeviceKeyList_keyProperty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bluetoothDeviceKeyList_keyName"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_toRightOf="@id/bluetoothDeviceKeyList_keyID"
+        android:textColor="#9B9B9B"
+        android:textSize="@dimen/dp_11"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_22"
+        android:src="@drawable/item_right_arrow" />
+    <View
+        android:background="#E9E9E9"
+        android:layout_marginLeft="@dimen/dp_78"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

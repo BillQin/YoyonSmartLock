@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yoyon.smartlock.standalone">
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="android.max_aspect" android:value="2.2" />
+        <activity android:name=".activity.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.OncePasswordActivity"/>
+        <activity android:name=".activity.PatternPasswordSettingActivity"/>
+        <activity android:name=".activity.PatternPasswordVerifyActivity"/>
+        <activity android:name=".activity.ChooseLockModelActivity"/>
+        <activity android:name=".activity.PairingLockTipsActivity"/>
+        <activity android:name=".activity.PairingLockActivity"/>
+        <activity android:name=".activity.LockDetailsActivity"/>
+        <activity android:name=".activity.LockSettingActivity"/>
+        <activity android:name=".activity.LockManageKeyActivity"/>
+        <activity android:name=".activity.LockKeyModifyActivity"/>
+        <activity android:name=".activity.ScanActivity"/>
+    </application>
+</manifest>

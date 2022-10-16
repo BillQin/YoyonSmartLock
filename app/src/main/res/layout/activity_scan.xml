@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_64"
+        android:background="@drawable/actionbar_bg"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:id="@+id/scan_cancelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_18" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/scan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:id="@+id/scan_galleryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="@string/gallery"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_18" />
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="@dimen/dp_19"
+                android:layout_height="@dimen/dp_17"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/gallery" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<include-->
+        <!--android:id="@+id/top"-->
+        <!--layout="@layout/top" />-->
+    <!-- 我这里只是在大局下修改了一些样式，不过其实 扫描框中的 各种激光条，边框都可以改变，有兴趣的同学可以自己去搜一下 -->
+    <!-- 这个控件就是扫描的窗口了 -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/scan_dbv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_framing_rect_height="@dimen/dp_206"
+        app:zxing_framing_rect_width="@dimen/dp_206"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_use_texture_view="true">
+
+        <TextView
+            android:id="@+id/scan_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:padding="@dimen/dp_20"
+            android:textColor="@android:color/white" />
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+</LinearLayout>
