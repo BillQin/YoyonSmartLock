@@ -1,5 +1,7 @@
 package yoyon.smartlock.standalone.activity;
 
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +21,7 @@ public class PairingLockTipsActivity extends Activity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pairing_lock_tips);
         initComponent();
+        requestPermissions(new String[]{ACCESS_FINE_LOCATION}, 0);
     }
     private void initComponent(){
         LinearLayout cancelLayout = findViewById(R.id.pairingLockTipsActivity_cancelLayout);

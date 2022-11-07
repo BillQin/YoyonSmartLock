@@ -1,5 +1,8 @@
 package yoyon.smartlock.standalone.activity;
 
+import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;

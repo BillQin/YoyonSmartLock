@@ -15,7 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import yoyon.smartlock.standalone.R;
+import yoyon.smartlock.standalone.activity.PrivacyPolicyActivity;
 import yoyon.smartlock.standalone.activity.SettingActivity;
+import yoyon.smartlock.standalone.activity.UserAgreementActivity;
 import yoyon.smartlock.standalone.utils.VersionUtils;
 
 /**
@@ -39,6 +41,10 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         rl_setting.setOnClickListener(this);
         RelativeLayout rl_checkUpdate = view.findViewById(R.id.mineFragment_checkUpdate);
         rl_checkUpdate.setOnClickListener(this);
+        RelativeLayout rl_privatePolicy = view.findViewById(R.id.mineFragment_privacyPolicy);
+        rl_privatePolicy.setOnClickListener(this);
+        RelativeLayout rl_userAgreement = view.findViewById(R.id.mineFragment_userAgreement);
+        rl_userAgreement.setOnClickListener(this);
         TextView versionCode = view.findViewById(R.id.mineFragment_versionCode);
         versionCode.setText(VersionUtils.getVersionName(getActivity()));
     }
@@ -56,6 +62,12 @@ public class MineFragment extends Fragment implements View.OnClickListener{
                 }else{
                     VersionUtils.checkUpdate(getActivity(),true);
                 }
+                break;
+            case R.id.mineFragment_privacyPolicy:
+                startActivity(new Intent(getActivity(), PrivacyPolicyActivity.class));
+                break;
+            case R.id.mineFragment_userAgreement:
+                startActivity(new Intent(getActivity(), UserAgreementActivity.class));
                 break;
             default:
                 break;

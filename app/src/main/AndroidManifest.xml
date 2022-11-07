@@ -33,5 +33,7 @@
         <activity android:name=".activity.LockManageKeyActivity"/>
         <activity android:name=".activity.LockKeyModifyActivity"/>
         <activity android:name=".activity.ScanActivity"/>
+        <activity android:name=".activity.PrivacyPolicyActivity"/>
+        <activity android:name=".activity.UserAgreementActivity"/>
     </application>
 </manifest>

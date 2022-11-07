@@ -1,12 +1,14 @@
 package yoyon.smartlock.standalone;
 
+import android.app.AlertDialog;
 import android.app.Application;
 import android.content.Context;
+import android.content.DialogInterface;
 
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 
-//import cn.bmob.v3.Bmob;
+import yoyon.smartlock.standalone.utils.SharedPreferencesUtil;
 import yoyon.smartlock.standalone.utils.SoundPlayUtils;
 
 /**
@@ -21,7 +23,6 @@ public class MyApplication extends Application{
         super.onCreate();
         mContext = getApplicationContext();
         internationalizationSmartRefreshLayout();
-//        Bmob.initialize(this, "c72e5b7c4dd1f78fbce62fda4b91f787");
         SoundPlayUtils.init(mContext);
     }
 
@@ -49,4 +50,6 @@ public class MyApplication extends Application{
         ClassicsFooter.REFRESH_FOOTER_FAILED = getString(R.string.footer_failed);//"加载失败";
         ClassicsFooter.REFRESH_FOOTER_ALLLOADED = getString(R.string.footer_all_loaded);//"全部加载完成";
     }
+
+
 }
