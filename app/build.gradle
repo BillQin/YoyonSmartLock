@@ -1,13 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        yoyon {
+        storePassword 'yoyon'
+            keyAlias 'yoyon'
+            keyPassword 'yoyon'
+            storeFile file('yoyon')
+        }
+    }
     compileSdkVersion 26
     defaultConfig {
         applicationId "yoyon.smartlock.standalone"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 3
-        versionName "1.3"
+        versionName "1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
